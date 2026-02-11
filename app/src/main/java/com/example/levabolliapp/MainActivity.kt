@@ -670,8 +670,8 @@ class MainActivity : AppCompatActivity() {
                 y += 15
                 if (y > 800f) {
                     doc.finishPage(page)
-                    val newPage = doc.startPage(pageInfo)
-                    canvas.setBitmap(newPage.canvas.bitmap)
+                        page = doc.startPage(pageInfo)
+                        canvas = page.canvas
                     y = 30f
                 }
             }
