@@ -670,8 +670,8 @@ class MainActivity : AppCompatActivity() {
                 y += 15
                 if (y > 800f) {
                     doc.finishPage(page)
-                        page = doc.startPage(pageInfo)
-                        canvas = page.canvas
+                     var   page = doc.startPage(pageInfo)
+                     var canvas = page.canvas
                     y = 30f
                 }
             }
